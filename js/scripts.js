@@ -52,14 +52,12 @@
             });
         }
     });
+    
 
     // FORM VALIDATION
-
-    $(".subscribe-form input").jqBootstrapValidation({
-        preventSubmit: true,
-        submitSuccess: function ($form, event) {
-            event.preventDefault(); // prevent default submit behaviour
-            $.ajax({
+    
+    $("subscribe-form-submit").on('click', function(){
+        $.ajax({
                 url: "../service/subscribe.php",
                 type: "POST",
                 data: {
@@ -74,11 +72,19 @@
                     $('#subscribe-success > .alert-success')
                         .append('</div>');
                 }
-            })
+            });
+    });
+    
+    /*
+    $(".subscribe-form input").jqBootstrapValidation({
+        preventSubmit: true,
+        submitSuccess: function ($form, event) {
+            event.preventDefault(); // prevent default submit behaviour
+            
 
         }
     });
-
+    */
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {
