@@ -1265,7 +1265,8 @@ header .container {
     transition: transform 0.3s;
 }
 .team-content {
-    padding: 50px;
+    padding-top: 10%;
+    padding-bottom: 0.1%;
     background: #1080f2;
     color: #fff;
     position: relative;
@@ -1318,7 +1319,7 @@ header .container {
     bottom: -10px;
 }
 .team-member:hover .triangle {
-    border-bottom: 700px solid;
+    border-bottom: 660px solid;
     border-color: #1080f2;
     opacity: 0.85;
     border-left: 700px solid transparent;
@@ -2148,3 +2149,6 @@ text-transform: uppercase;
     width: 100%;
 }
 
+.about{
+    color: white;
+}
