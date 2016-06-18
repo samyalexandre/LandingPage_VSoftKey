@@ -52,22 +52,20 @@
             });
         }
     });
+    
 
     // FORM VALIDATION
+    $(document).on('submit','.subscribe-form',function(e){
+   e.preventDefault();
 
-    $(".subscribe-form input").jqBootstrapValidation({
-        preventSubmit: true,
-        submitSuccess: function ($form, event) {
-            event.preventDefault(); // prevent default submit behaviour
-		console.log("hey");
-            $.ajax({
+       $.ajax({
                 url: "../service/subscribe.php",
                 type: "POST",
                 data: {
-                    email: $("#subscribe-form-email")
+                    email: $("#subscribe-form-email").val()
                 },
                 success: function () {
-                    $('#subscribe-success').html("<div class='alert alert-success'>");
+$('#subscribe-success').html("<div class='alert alert-success'>");
                     $('#subscribe-success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#subscribe-success > .alert-success')
@@ -75,11 +73,19 @@
                     $('#subscribe-success > .alert-success')
                         .append('</div>');
                 }
-            })
+            });
+    });
+    
+    /*
+    $(".subscribe-form input").jqBootstrapValidation({
+        preventSubmit: true,
+        submitSuccess: function ($form, event) {
+            event.preventDefault(); // prevent default submit behaviour
+            
 
         }
     });
-
+    */
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {

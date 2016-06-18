@@ -9,7 +9,7 @@ $array = array();
 
 if(isset($_POST['email']) && !empty($_POST['email'])) {  
     $statement = $connexion->prepare("INSERT INTO newsletter VALUES(NULL, :field1, 1, NULL)");
-    $statement->execute(array(':field1' => $_POST['email']);  
+    $statement->execute(array(':field1' => $_POST['email']));  
 } else {
     exit(1);
 }
