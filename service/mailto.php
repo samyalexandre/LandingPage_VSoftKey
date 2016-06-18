@@ -24,7 +24,7 @@ $sujet = "Hey mon ami !";
 //=========
  
 //=====Création du header de l'e-mail.
-$header = "From: \"Newsletter Heptaward\"<newsletter@heptaward.com>".$passage_ligne;
+$header = "From: \"Newsletter Heptaward\"<j.legoff@heptaward.com>".$passage_ligne;
 $header.= "MIME-Version: 1.0".$passage_ligne;
 $header.= "Content-Type: multipart/mixed;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
 //==========
