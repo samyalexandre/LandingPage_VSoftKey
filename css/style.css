@@ -1757,14 +1757,13 @@ footer {
     padding: 0;
     width: auto;
     margin-top: 5px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     padding-left: 50px;
     max-width: 280px;
 }
 .footer-secondary-nav li {
     display: inline-block;
     float: left;
-    margin-bottom: 30px;
     width: 100%;
 }
 .footer-secondary-nav a {
@@ -2204,4 +2203,21 @@ text-transform: uppercase;
 
 .bold {
 font-weight: bold;
+}
+
+.logo-button{
+    min-width: 100px;
+    border-radius: 2px;
+    font-family: PTSans;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border: 2px solid #1080f2 !important;
+    margin: 0;
+    color: white !important;
 }
