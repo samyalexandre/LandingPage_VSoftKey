@@ -56,7 +56,7 @@ $message.= $passage_ligne."--".$boundary_alt."--".$passage_ligne;
 $message.= $passage_ligne."--".$boundary.$passage_ligne;
  
 //=====Envoi de l'e-mail.
-mail($mail,$sujet,$message,$header);
+echo mail($mail,$sujet,$message,$header);
  
 //==========
 ?>
