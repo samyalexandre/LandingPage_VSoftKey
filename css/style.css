@@ -214,6 +214,7 @@ body.modal-open {
 .parallax h2.section-heading,
 .parallax .section-subheading {
     color: #fff;
+    margin-top: 2%;
 }
 .parallax .separator {
     background: #fff;
@@ -674,7 +675,9 @@ header .container {
 }
 
 #services .fa{
- color: #1080f2;   
+ color: #1080f2;
+ margin-bottom: 36px;
+ font-size: 40px
 }
 .service-heading {
     text-transform: none;
@@ -871,15 +874,22 @@ header .container {
 
 #video .col-md-4 {
     text-align: center;
+    margin-bottom: 8%;
 }
 #video .col-md-4.last {
     padding-right: 0;
 }
 
-#video .nc-icon-outline, .fa{
+#video .nc-icon-outline{
     color: #ffffff;
     margin-bottom: 36px;
     font-size: 40px
+}
+
+#video .fa{
+    color: #ffffff;
+    margin-bottom: 36px;
+    font-size: 40px;
 }
 
 .video-container {
@@ -1754,7 +1764,7 @@ footer {
 }
 .footer-secondary-nav {
     float: left;
-    padding: 0;
+    padding: ;
     width: auto;
     margin-top: 5px;
     margin-bottom: 0px;
@@ -2220,4 +2230,8 @@ font-weight: bold;
     border: 2px solid #1080f2 !important;
     margin: 0;
     color: white !important;
+}
+
+.contact-footer{
+    margin-bottom: 14%;
 }
