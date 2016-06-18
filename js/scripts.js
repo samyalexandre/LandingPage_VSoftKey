@@ -59,6 +59,7 @@
         preventSubmit: true,
         submitSuccess: function ($form, event) {
             event.preventDefault(); // prevent default submit behaviour
+		console.log("hey");
             $.ajax({
                 url: "../service/subscribe.php",
                 type: "POST",
