@@ -149,7 +149,7 @@ section .section-subheading {
 /* 3.1 GENERAL*/
 
 section {
-    padding: 100px 0;
+    padding: 45px 0;
 }
 .row {
     margin: 0;
@@ -667,10 +667,14 @@ header .container {
 #services .col-md-3.last {
     padding-right: 0;
 }
-#services .nc-icon-outline {
+#services .nc-icon-outline{
     color: #1080f2;
     margin-bottom: 36px;
     font-size: 40px
+}
+
+#services .fa{
+ color: #1080f2;   
 }
 .service-heading {
     text-transform: none;
@@ -1288,6 +1292,9 @@ header .container {
 }
 /*6.7 TEAM*/
 
+#team .separator{
+    margin-bottom: 5%;
+}
 .team-member {
     text-align: center;
     overflow: hidden;
@@ -2193,4 +2200,8 @@ text-transform: uppercase;
 
 .about{
     color: white;
+}
+
+.bold {
+font-weight: bold;
 }
