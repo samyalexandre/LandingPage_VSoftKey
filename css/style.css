@@ -876,10 +876,16 @@ header .container {
     padding-right: 0;
 }
 
-#video .nc-icon-outline, .fa{
+#video .nc-icon-outline{
     color: #ffffff;
     margin-bottom: 36px;
     font-size: 40px
+}
+
+#video .fa{
+    color: #ffffff;
+    margin-bottom: 36px;
+    font-size: 40px;
 }
 
 .video-container {
