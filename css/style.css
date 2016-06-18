@@ -210,9 +210,7 @@ section {
 body.modal-open {
     overflow: hidden;
 }
-.parallax {
-    background: #1080f2;
-}
+
 .parallax h2.section-heading,
 .parallax .section-subheading {
     color: #fff;
@@ -608,7 +606,7 @@ header {
     text-align: center;
     overflow: hidden;
     color: #fff;
-        background-color: rgba(30, 38, 49, 0.75)!important;
+    background-color: rgba(30, 38, 49, 0.75)!important;
     background-image: -webkit-linear-gradient(270deg, rgba(51, 51, 51, 0.04) 0%, rgba(255, 255, 255, 0.04) 100%);
     background-image: linear-gradient(180deg, rgba(51, 51, 51, 0.04) 0%, rgba(255, 255, 255, 0.04) 100%);
     height: 52em;
@@ -849,9 +847,37 @@ header .container {
 }
 /*6.3 VIDEO*/
 
+#video h4{
+    color: white;
+    font-size: 33px;
+}
+
+#video p{
+    color: white;
+    font-size: 17px;
+}
+
+#video .separator{
+    margin-bottom: 5%;
+}
+
 #video .section-subheading {
     margin-bottom: 55px;
 }
+
+#video .col-md-4 {
+    text-align: center;
+}
+#video .col-md-4.last {
+    padding-right: 0;
+}
+
+#video .nc-icon-outline, .fa{
+    color: #ffffff;
+    margin-bottom: 36px;
+    font-size: 40px
+}
+
 .video-container {
     position: relative;
 }
@@ -873,7 +899,7 @@ header .container {
     margin-top: -48px;
     width: 76px;
     height: 76px;
-    background-color: rgba(39, 49, 64, 0.6);
+    background-color: rgba(39, 49, , 0.6);
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
@@ -894,10 +920,20 @@ header .container {
     left: 30px;
 }
 #video {
-    background: url(../img/video/videobg.jpg);
+    background: url(../img/elegant.jpeg);
     position: relative;
     background-size: 100%;
     background-attachment: fixed;
+}
+
+#video:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 128, 242, 0.76);
 }
 #video .overlay {
     width: 100%;
@@ -1425,7 +1461,13 @@ header .container {
 
 #subscribe {
     padding: 50px;
+    background: #1080f2;
 }
+
+#subscribe .parallax {
+    background: #1080f2;
+}
+
 #subscribe h3 {
     color: white;
     font-family: WorkSans;
