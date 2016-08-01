@@ -1,6 +1,8 @@
 /* =======================================================================
 KeySoft - Software Landing Page 
 ======================================================================= */
+
+
 /*
 1. GLOBAL STYLES
 2. TYPOGRAPHY
@@ -29,6 +31,8 @@ KeySoft - Software Landing Page
 8.LIVE PREVIEW
 
 */
+
+
 /* --------------------------------------
 1. GLOBAL STYLES
 -----------------------------------------*/
@@ -38,6 +42,7 @@ body {
     font-weight: normal;
     padding: 0;
 }
+
 a,
 a:hover,
 a:focus,
@@ -46,46 +51,58 @@ a.active {
     outline: 0;
     text-decoration: none;
 }
+
 a {
     color: #1080f2
 }
+
 a:hover,
 a:focus,
 a:active,
 a.active {
     color: #1080f2
 }
+
 .btn:focus,
 .btn:active,
 .btn.active,
 .btn:active:focus {
     outline: 0;
 }
+
 p {
     color: #666;
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 0;
 }
+
 ::-moz-selection {
     text-shadow: none;
     background: #1080f2;
     color: #fff;
 }
+
 ::selection {
     text-shadow: none;
     background: #1080f2;
     color: #fff;
 }
+
 img::selection {
     background: 0 0;
 }
+
 img::-moz-selection {
     background: 0 0;
 }
+
+
 /* --------------------------------------
 2. TYPOGRAPHY
 -----------------------------------------*/
+
+
 /* 2.1 FONTS*/
 
 @font-face {
@@ -93,15 +110,18 @@ img::-moz-selection {
     font-weight: normal;
     src: url(../fonts/PT_Sans-Web-Regular.ttf);
 }
+
 @font-face {
     font-family: PTSans;
     font-weight: bold;
     src: url(../fonts/PT_Sans-Web-Bold.ttf);
 }
+
 @font-face {
     font-family: WorkSans;
     src: url(../fonts/WorkSans-Light.ttf);
 }
+
 @font-face {
     font-family: 'Nucleo Outline';
     src: url('../fonts/nucleo-outline.eot');
@@ -109,6 +129,8 @@ img::-moz-selection {
     font-weight: normal;
     font-style: normal;
 }
+
+
 /* 2.2 HEADINGS */
 
 h1,
@@ -116,9 +138,11 @@ h2,
 h3 {
     font-family: "WorkSans", Helvetica, Arial, sans-serif;
 }
+
 body {
     font-family: "PTSans", Helvetica, Arial, sans-serif;
 }
+
 section h2.section-heading {
     margin-top: 0;
     margin-bottom: 25px;
@@ -126,6 +150,7 @@ section h2.section-heading {
     letter-spacing: -1px;
     line-height: 40px;
 }
+
 section .section-subheading {
     margin-bottom: 95px;
     text-transform: none;
@@ -136,6 +161,7 @@ section .section-subheading {
     color: #666666;
     font-weight: 400;
 }
+
 .separator {
     width: 30px;
     height: 2px;
@@ -143,32 +169,42 @@ section .section-subheading {
     margin: auto;
     background-color: #1080f2;
 }
+
+
 /* --------------------------------------
 3. LAYOUT
 -----------------------------------------*/
+
+
 /* 3.1 GENERAL*/
 
 section {
     padding: 45px 0;
 }
+
 .row {
     margin: 0;
 }
+
 .container {
     padding: 0;
 }
+
 .outer-margin {
     margin: 0 -15px;
 }
+
 .bg-light-gray {
     background-color: #f7f7f7;
 }
+
 .btn-primary {
     text-transform: uppercase;
     font-family: "WorkSans", Helvetica, Arial, sans-serif;
     font-weight: 700;
     color: #fff;
 }
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
@@ -178,11 +214,13 @@ section {
     color: #fff;
     background-color: #fec503;
 }
+
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     background-image: none;
 }
+
 .btn-xl {
     height: 50px;
     background-color: #1080f2;
@@ -195,6 +233,7 @@ section {
     width: 100%;
     transition: 0.3s;
 }
+
 .btn-xl:hover,
 .btn-xl:focus,
 .btn-xl:active,
@@ -202,11 +241,13 @@ section {
     background-color: #273140;
     color: #fff;
 }
+
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
     background-image: none;
 }
+
 body.modal-open {
     overflow: hidden;
 }
@@ -216,15 +257,19 @@ body.modal-open {
     color: #fff;
     margin-top: 2%;
 }
+
 .parallax .separator {
     background: #fff;
 }
+
 .gray-bg {
     background: #f8f8f8;
 }
+
 .header-buttons {
     margin: 60px auto 100px auto;
 }
+
 .primary-button {
     min-width: 150px;
     padding: 0 20px;
@@ -244,17 +289,20 @@ body.modal-open {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
+
 .primary-button.button-inverse {
     color: #fff;
     background: #1080f2;
     border: 2px solid #1080f2;
     margin: 0;
 }
+
 .primary-button.button-inverse:hover {
     color: #1080f2;
     background: transparent;
     border: 2px solid #1080f2;
 }
+
 .secondary-button {
     min-width: 150px;
     text-align: center;
@@ -274,31 +322,39 @@ body.modal-open {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
+
 .secondary-button-inverse {
     color: #1080f2;
     border-color: #1080f2;
     background: #fff
 }
+
 .secondary-button.secondary-button-inverse:hover {
     color: #fff;
     background: #1080f2;
 }
+
 .primary-button:hover {
     background: none;
     color: #fff;
     text-decoration: none;
 }
+
 .secondary-button:hover {
     background: #fff;
     color: #273140;
     text-decoration: none;
 }
+
+
 /*3.2 LOGO*/
 
 .logo img {
     height: 55px;
     width: auto;
 }
+
+
 /*3.3 PRELOADER*/
 
 #preloader {
@@ -311,6 +367,8 @@ body.modal-open {
     overflow: visible;
     background: #1080f2
 }
+
+
 }
 .spinner {
     opacity: 0.9;
@@ -353,6 +411,7 @@ body.modal-open {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+    
     to {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -364,14 +423,15 @@ body.modal-open {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+    
     to {
         -ms-transform: rotate(360deg);
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
-/*3.4 CAROUSELS*/
 
+/*3.4 CAROUSELS*/
 .owl-theme .owl-controls .owl-buttons {
     display: none;
 }
@@ -458,8 +518,8 @@ body.modal-open {
     line-height: 0;
     height: 0;
 }
-/* display none until init */
 
+/* display none until init */
 .owl-carousel {
     display: none;
     position: relative;
@@ -511,10 +571,10 @@ body.modal-open {
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
 }
+
 /* --------------------------------------
 4. MENU
 -----------------------------------------*/
-
 .navbar-default {
     border-color: transparent;
     background-color: #273140;
@@ -593,15 +653,16 @@ body.modal-open {
         -ms-transition: all 0.25s ease-in-out;
         transition: all 0.25s ease-in-out;
     }
+    
     .navbar-default.navbar-shrink {
         padding: 10px 0;
         background-color: #273140;
     }
 }
+
 /* --------------------------------------
 5. HEADER
 -----------------------------------------*/
-
 header {
     position: relative;
     text-align: center;
@@ -612,10 +673,9 @@ header {
     background-image: linear-gradient(180deg, rgba(51, 51, 51, 0.04) 0%, rgba(255, 255, 255, 0.04) 100%);
     height: 52em;
 }
-
-
-#video_background {position: absolute!important;}
-
+#video_background {
+    position: absolute!important;
+}
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -657,27 +717,27 @@ header .container {
     left: 0;
     right: 0;
 }
+
 /* --------------------------------------
 6. SECTIONS
 -----------------------------------------*/
-/*     6.1 ABOUT*/
 
+/*     6.1 ABOUT*/
 #services .col-md-3 {
     text-align: center;
 }
 #services .col-md-3.last {
     padding-right: 0;
 }
-#services .nc-icon-outline{
+#services .nc-icon-outline {
     color: #1080f2;
     margin-bottom: 36px;
     font-size: 40px
 }
-
-#services .fa{
- color: #1080f2;
- margin-bottom: 36px;
- font-size: 40px
+#services .fa {
+    color: #1080f2;
+    margin-bottom: 36px;
+    font-size: 40px
 }
 .service-heading {
     text-transform: none;
@@ -687,10 +747,11 @@ header .container {
     line-height: 22px;
     margin-bottom: 22px;
 }
+
 /*6.2 FEATURES*/
-
-
-#features {overflow: hidden;}
+#features {
+    overflow: hidden;
+}
 #features .container {
     position: relative;
 }
@@ -830,6 +891,7 @@ header .container {
         -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
     }
+    
     to {
         opacity: 1;
         -webkit-transform: none;
@@ -842,6 +904,7 @@ header .container {
         -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
     }
+    
     to {
         opacity: 1;
         -webkit-transform: none;
@@ -852,26 +915,22 @@ header .container {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
 }
-/*6.3 VIDEO*/
 
-#video h4{
+/*6.3 VIDEO*/
+#video h4 {
     color: white;
     font-size: 33px;
 }
-
-#video p{
+#video p {
     color: white;
     font-size: 17px;
 }
-
-#video .separator{
+#video .separator {
     margin-bottom: 5%;
 }
-
 #video .section-subheading {
     margin-bottom: 55px;
 }
-
 #video .col-md-4 {
     text-align: center;
     margin-bottom: 8%;
@@ -879,19 +938,16 @@ header .container {
 #video .col-md-4.last {
     padding-right: 0;
 }
-
-#video .nc-icon-outline{
+#video .nc-icon-outline {
     color: #ffffff;
     margin-bottom: 36px;
     font-size: 40px
 }
-
-#video .fa{
+#video .fa {
     color: #ffffff;
     margin-bottom: 36px;
     font-size: 40px;
 }
-
 .video-container {
     position: relative;
 }
@@ -939,15 +995,14 @@ header .container {
     background-size: 100%;
     background-attachment: fixed;
 }
-
-#video:before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(7, 51, 111, 0.69)
+#video:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 51, 111, 0.69)
 }
 #video .overlay {
     width: 100%;
@@ -1005,8 +1060,8 @@ header .container {
     box-shadow: none;
     background: none;
 }
-/*6.4 SOLUTIONS*/
 
+/*6.4 SOLUTIONS*/
 .chart {
     position: relative;
     display: block;
@@ -1055,8 +1110,8 @@ header .container {
     display: inline-block;
     font-size: 30px;
 }
-/*6.5 PRICING*/
 
+/*6.5 PRICING*/
 .pricing {
     overflow: hidden;
     position: relative;
@@ -1210,8 +1265,8 @@ header .container {
 .pricing .secondary-button.secondary-button-inverse:hover {
     background: #1080f2;
 }
-/*6.6 TESTIMONIALS*/
 
+/*6.6 TESTIMONIALS*/
 #testimonials {
     padding-bottom: 0px;
     margin-bottom: 52px;
@@ -1300,9 +1355,9 @@ header .container {
 #testimonials .owl-controls .owl-page.active span {
     opacity: 0;
 }
-/*6.7 TEAM*/
 
-#team .separator{
+/*6.7 TEAM*/
+#team .separator {
     margin-bottom: 5%;
 }
 .team-member {
@@ -1441,8 +1496,8 @@ header .container {
     opacity: 1;
     visibility: visible;
 }
-/*6.8 CLIENTS*/
 
+/*6.8 CLIENTS*/
 #clients .owl-controls .owl-buttons {
     display: block;
 }
@@ -1474,17 +1529,15 @@ header .container {
 #clients .slider img:hover {
     opacity: 1;
 }
-/*6.9 SUBSCRIBE*/
 
+/*6.9 SUBSCRIBE*/
 #subscribe {
     padding: 50px;
     background: #1080f2;
 }
-
 #subscribe .parallax {
     background: #1080f2;
 }
-
 #subscribe h3 {
     color: white;
     font-family: WorkSans;
@@ -1499,13 +1552,11 @@ header .container {
     float: right;
     position: relative;
 }
-
 #subscribe-success {
     position: absolute;
     top: 0;
     width: 100%;
 }
-
 #subscribe-success .alert-success {
     margin: 0;
     width: 100%;
@@ -1514,17 +1565,12 @@ header .container {
     text-align: center;
     color: #273140;
 }
-
 #subscribe #subscribe-success .close {
     outline: none;
 }
-
 #subscribe #subscribe-success .close:hover {
     color: #273140;
 }
-
-
-
 #subscribe .subscribe-form input {
     width: 400px;
     border-radius: 2px;
@@ -1552,8 +1598,6 @@ header .container {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-
-
 #subscribe .subscribe-form input::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
@@ -1575,8 +1619,8 @@ header .container {
     border: 1px solid #fff;
     outline: none;
 }
-/*6.10 CONTACT*/
 
+/*6.10 CONTACT*/
 #contact {
     background-color: #fff;
     position: relative;
@@ -1664,10 +1708,10 @@ header .container {
     padding: 14px;
     border-radius: 2px;
 }
+
 /* --------------------------------------
 7.FOOTER
 -----------------------------------------*/
-
 footer {
     padding: 50px 0 40px 0;
     text-align: center;
@@ -1794,10 +1838,11 @@ footer {
 .footer-secondary-nav .fa.fa-envelope {
     font-size: 14px;
 }
-/*-----------------------------------------------------------------*/
-/* 8. ICONS
+
 /*-----------------------------------------------------------------*/
 
+/* 8. ICONS
+/*-----------------------------------------------------------------*/
 .iconspage header {
     text-align: center;
     padding: 120px 0 0;
@@ -2021,10 +2066,11 @@ footer {
 .nc-icon-outline.world:before {
     content: "\e631";
 }
-/*-----------------------------------------------------------------*/
-/* 9 LIVE PREVIEW
+
 /*-----------------------------------------------------------------*/
 
+/* 9 LIVE PREVIEW
+/*-----------------------------------------------------------------*/
 #customizer {
     position: fixed;
     top: 100px;
@@ -2096,7 +2142,7 @@ footer {
     opacity: 0.75;
 }
 #customizer span {
-text-transform: uppercase;
+    text-transform: uppercase;
     text-decoration: none;
     margin-bottom: 0px;
     margin-top: 5px;
@@ -2110,30 +2156,33 @@ text-transform: uppercase;
     line-height: 1;
     font-size: 14px;
     width: 100%;
-    
 }
-#headerbg {    padding-left: 0;
+#headerbg {
+    padding-left: 0;
     float: left;
-    margin-bottom: 15px;}
+    margin-bottom: 15px;
+}
 #headerbg li a {
-       color: #888;
+    color: #888;
     font-size: 13px;
     display: block;
     margin-bottom: 2px;
     font-weight: bold;
     font-family: WorkSans;
     float: left;
-        -webkit-transition: 0.2s;
+    -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
-    transition: 0.2s;    
+    transition: 0.2s;
 }
 #headerbg li a.active,
-#headerbg li a.active:hover { color: #1080f2 }
-
-#headerbg li a:hover {color: #000;}
-
+#headerbg li a.active:hover {
+    color: #1080f2
+}
+#headerbg li a:hover {
+    color: #000;
+}
 #customizer #colors {
     display: block;
     float: left;
@@ -2159,63 +2208,50 @@ text-transform: uppercase;
 #colors li #orange {
     background: #ff9800;
 }
-
 .logo {
-    font-family: 'Josefin Sans', sans-serif; 
+    font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     color: white;
     font-size: 1.4em;
-    
 }
-
 .logo > * {
     display: inline-block;
     vertical-align: middle;
 }
-
-.logo:hover{
+.logo:hover {
     color: white !important;
 }
-
-.img-responsive{
+.img-responsive {
     -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
-
-.img-responsive:hover{
+.img-responsive:hover {
     -webkit-transform: rotate(-8deg);
-     -moz-transform: rotate(-8deg);
-       -o-transform: rotate(-8deg);
-      -ms-transform: rotate(-8deg);
-          transform: rotate(-8deg);
-    
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
 }
-
-.footer-brand{
-    font-family: 'Josefin Sans', sans-serif; 
+.footer-brand {
+    font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     padding-top: 2%;
     color: white;
     font-size: 1.4em;
-    
 }
-
-.team-picture{
+.team-picture {
     width: 100%;
 }
-
-.about{
+.about {
     color: white;
 }
-
 .bold {
-font-weight: bold;
+    font-weight: bold;
 }
-
-.logo-button{
+.logo-button {
     min-width: 100px;
     border-radius: 2px;
     font-family: PTSans;
@@ -2231,7 +2267,29 @@ font-weight: bold;
     margin: 0;
     color: white !important;
 }
-
-.contact-footer{
+.contact-footer {
     margin-bottom: 14%;
+}
+#theFinalCountdownTututututututututu {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.22);
+  padding: 20px;
+}
+
+#theFinalCountdownTututututututututu > i {
+    font-size: 2em;
+}
+
+#countdown > * {
+    display: inline-block;
+}
+.cd-tututu {
+    width: 60px;
+    text-align: right;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3em;
+}
+
+.cd-tututu-i {
+    font-size: 2em;
 }
